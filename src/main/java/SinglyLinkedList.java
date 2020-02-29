@@ -35,42 +35,4 @@ public class SinglyLinkedList {
         }
         return false;
     }
-
-    /**
-     * Removes middle element with one traverse only.
-     * @return SinglyLinkedList
-     */
-    public SinglyLinkedList removeMiddleElement()
-    {
-
-        // linked list is empty
-        if (head == null) {
-            return null;
-        }
-
-        // linked list with one element only
-        if (head.next == null) {
-            return null;
-        }
-
-        Node slowPointer = head;    // this will point to the middle element
-        Node fastPointer = head;
-
-        // search for the middle element
-        if (head != null)
-        {
-            while (fastPointer != null && fastPointer.next != null)
-            {
-                slowPointer = slowPointer.next;
-                fastPointer = fastPointer.next.next;
-            }
-        }
-
-        // remove the middle element by copy and reconnect
-        Node tempNode = slowPointer.next;
-        slowPointer.data = tempNode.data;
-        slowPointer.next = tempNode.next;
-        return this;
-    }
-
 }
