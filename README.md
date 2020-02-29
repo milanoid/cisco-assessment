@@ -15,7 +15,7 @@ Support your answer with tests.
 
 - Tests in [SinglyLinkedListTest](src/test/java/SinglyLinkedListTest.java
 )
-- method in [SinglyLinkedList.removeMiddleElement()](src/main/java/SinglyLinkedList.java#43)
+- Method in [Answer1.removeMiddleElement()](src/main/java/Answer1.java#8)
 
 ### Question 2
 
